@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter >
       <Routes>
         <Route element={<DefaultLayout />}>
-          <Route path="/" element={HomePage} />
+          <Route path="/" Component={HomePage} />
         </Route>
       </Routes>
     </BrowserRouter>
