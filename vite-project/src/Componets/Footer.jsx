@@ -1,7 +1,7 @@
 export default function Footer() {
 
     return (
-        <footer className="bg-secondary mt-5">
+        <footer className="bg-secondary mt-5 p-4">
             <div className="container d-flex justify-content-around align-items-center gap-3 bg-secondary">
                 <div className="row">
                     <div className="col-6">
@@ -19,15 +19,8 @@ export default function Footer() {
                         </p>
                     </div>
                 </div>
-
-
-
-
-
             </div>
             <p className="copyright text-muted m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quos, magni ullam quidem cumque nihil, earum id error obcaecati quisquam veritatis, iusto magnam. Alias reiciendis suscipit dolorum, laborum nam totam!</p>
-
-
 
         </footer>
     )

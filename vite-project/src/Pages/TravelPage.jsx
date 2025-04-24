@@ -12,28 +12,36 @@ export default function Traveldetailcard() {
 
     return (
         <div className="container p-4">
-            <div className="row">
-                <div className="col-8">
-                    <h1>{destination.destination}</h1>
-                    <p>{destination.description}</p>
-                    <p>
-                        <strong>Departure:</strong> {destination.departureDate}<br />
-                        <strong>Return:</strong> {destination.returnDate}<br />
-                        <strong>Participants:</strong> {destination.participants}
-                    </p>
-                </div>
-                <div className="col-4">
-                    <img src={destination.img} alt={destination.destination} className="img-fluid" />
+            <div className="p-3 my-5 bg-light rounded-3 shadow">
+                <div className="row">
+                    <div className="col-sm-12 col-lg-6">
+                        <h1 className="fw-bold">{destination.destination}</h1>
+                        <p>{destination.description}</p>
+                        <p>
+                            <strong>Departure:</strong> {destination.departureDate}<br />
+                            <strong>Return:</strong> {destination.returnDate}<br />
+                            <strong>Participants:</strong> {destination.participants}
+                        </p>
+                    </div>
+                    <div className="col-sm-12 col-lg-6">
+                        <img src={destination.img} alt={destination.destination} className="img-fluid shadow-sm" />
+                    </div>
                 </div>
             </div>
-            <div className="accordion">
-                {/* Accordion for client details */}
-                <h2>Client Details</h2>
-                {Clients.map(client => (
-                    <Clientaccordion key={client.id} client={client} />))}
 
+            <div className="p-4 my-2 bg-light rounded-3 shadow">
+
+                <div className="accordion">
+                    {/* Accordion for client details */}
+                    <h2 className="mb-4 mt-3">Client Details</h2>
+                    {Clients.map(client => (
+                        <Clientaccordion key={client.id} client={client} />))}
+
+
+                </div>
 
             </div>
+
 
         </div>
     );

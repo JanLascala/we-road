@@ -4,7 +4,7 @@ export default function TravelCards({ destination }) {
     return (
         <>
             <div className="col mb-3">
-                <Link className="card shadow-sm h-100" to={`/Traveldetailcard/${destination.id}`}>
+                <Link className="card shadow h-100" to={`/Traveldetailcard/${destination.id}`}>
                     <div>
                         <img src={destination.img} alt={destination.destination} className="card-img-top city-img" />
                     </div>
