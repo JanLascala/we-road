@@ -1,1 +1,15 @@
 @import 'bootstrap';
+
+main {
+    min-height: 600px;
+
+    .copyright {
+        font-size: 0.5rem;
+    }
+}
+
+/*footer*/
+a {
+    text-decoration: none;
+    color: black;
+}
