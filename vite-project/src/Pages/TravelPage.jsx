@@ -11,7 +11,7 @@ export default function Traveldetailcard() {
 
 
     return (
-        <div className="container">
+        <div className="container p-4">
             <div className="row">
                 <div className="col-8">
                     <h1>{destination.destination}</h1>
@@ -23,7 +23,7 @@ export default function Traveldetailcard() {
                     </p>
                 </div>
                 <div className="col-4">
-                    <p>image goes here</p>
+                    <img src={destination.img} alt={destination.destination} className="img-fluid" />
                 </div>
             </div>
             <div className="accordion">

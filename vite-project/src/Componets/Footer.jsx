@@ -1,8 +1,8 @@
 export default function Footer() {
 
     return (
-        <footer>
-            <div className="container d-flex justify-content-around align-items-center gap-3">
+        <footer className="bg-secondary mt-5">
+            <div className="container d-flex justify-content-around align-items-center gap-3 bg-secondary">
                 <div className="row">
                     <div className="col-6">
                         <ul className="list-unstyled">

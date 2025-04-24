@@ -3,21 +3,21 @@ export default function TravelCards({ destination }) {
 
     return (
         <>
-            <div className="col-3">
-                <Link className="card" to={`/Traveldetailcard/${destination.id}`}>
-                    <div className="card-header">
-                        <p>IMG HERE</p>
+            <div className="col mb-3">
+                <Link className="card shadow-sm h-100" to={`/Traveldetailcard/${destination.id}`}>
+                    <div>
+                        <img src={destination.img} alt={destination.destination} className="card-img-top city-img" />
                     </div>
                     <div className="card-body">
-                        <h2>
+                        <h2 className="fw-bold">
                             {destination.destination}
                         </h2>
-                        <ul>
-                            <li><span>Departure: {destination.departureDate}</span></li>
-                            <li><span>Return: {destination.returnDate}</span></li>
-                            <li>Participants: {destination.participants}</li>
-                        </ul>
-                        <p>{destination.description}</p>
+                        <div className="d-flex flex-column gap-1 mt-3">
+                            <span className="d-block fw-bold">Departure: {destination.departureDate}</span>
+                            <span className="d-block fw-bold">Return: {destination.returnDate}</span>
+                            <span className="d-block fw-bold">Participants: {destination.participants}</span>
+                        </div>
+                        <p className="mt-4">{destination.description}</p>
                     </div>
                 </Link>
             </div>

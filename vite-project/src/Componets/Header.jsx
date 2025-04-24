@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className="navbar navbar-expand navbar-light bg-light">
+            <nav className="navbar navbar-expand navbar-light bg-light shadow-sm">
                 <div className="nav navbar-nav">
                     <div className="logo">
                         <a className="nav-item nav-link active" href="#" aria-current="page">
