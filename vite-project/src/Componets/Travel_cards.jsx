@@ -1,10 +1,26 @@
-export default function TravelCards() {
-    return (
-        <div>
-            <h1>this is travel cards</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro recusandae nam quibusdam illum alias ab cum voluptates? Sint dolorem obcaecati consectetur sequi adipisci, quo aut vel consequatur laborum in perspiciatis voluptas placeat saepe ea ipsam, ad non deserunt distinctio! Blanditiis dicta iure natus non facilis maxime culpa rem nemo!</p>
+import { Link } from "react-router-dom"
+export default function TravelCards({ destination }) {
 
-            <h1>questo è un test</h1>
-        </div>
+    return (
+        <>
+            <div className="col-3">
+                <Link className="card" to='/Travel_detail_card'>
+                    <div className="card-header">
+                        <p>IMG HERE</p>
+                    </div>
+                    <div className="card-body">
+                        <h2>
+                            {destination.destination}
+                        </h2>
+                        <ul>
+                            <li><span>Departure: {destination.departureDate}</span></li>
+                            <li><span>Return: {destination.returnDate}</span></li>
+                            <li>Participants: {destination.participants}</li>
+                        </ul>
+                        <p>{destination.description}</p>
+                    </div>
+                </Link>
+            </div>
+        </>
     )
 };

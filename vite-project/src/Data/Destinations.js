@@ -73,4 +73,4 @@ const Destinations = [
     }
 ];
 
-module.exports = Destinations;
+export default Destinations;
