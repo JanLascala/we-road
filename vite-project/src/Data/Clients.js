@@ -65,4 +65,4 @@ const Clients = [
     }
 ];
 
-module.exports = Clients;
+export default Clients;

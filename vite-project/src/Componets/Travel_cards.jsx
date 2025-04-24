@@ -4,7 +4,7 @@ export default function TravelCards({ destination }) {
     return (
         <>
             <div className="col-3">
-                <Link className="card" to='/Travel_detail_card'>
+                <Link className="card" to={`/Traveldetailcard/${destination.id}`}>
                     <div className="card-header">
                         <p>IMG HERE</p>
                     </div>

@@ -9,7 +9,8 @@ export default function HomePage() {
             <div className="container">
                 <div className="row">
                     {
-                        Destinations.map(destination => (<TravelCards key={destination.id} destination={destination} />))
+                        Destinations.map(destination =>
+                            (<TravelCards key={destination.id} destination={destination} />))
                     }
                 </div>
             </div>
