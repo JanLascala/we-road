@@ -62,6 +62,14 @@ const Clients = [
         codiceFiscale: "SPSCHR80M05F839L",
         phone: "+39 360 555 6677",
         email: "chiara.esposito@example.com"
+    },
+    {
+        id: 9,
+        firstName: "Luca",
+        lastName: "Rossi",
+        codiceFiscale: "RSSLCU85M01H502Z",
+        phone: "+39 328 123 4567 test-omonimo",
+        email: "luca.rossi@example.com (test omonimimo)"
     }
 ];
 

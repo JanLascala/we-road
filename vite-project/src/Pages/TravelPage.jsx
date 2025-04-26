@@ -2,12 +2,17 @@ import { useParams } from "react-router-dom";
 import Destinations from "../Data/Destinations.js";
 import Clients from "../Data/Clients.js";
 import Clientaccordion from "../Componets/Client_accordion.jsx";
+import { useState } from "react";
 
 export default function Traveldetailcard() {
     const { id } = useParams();
     const destination = Destinations.find(dest => dest.id === parseInt(id));
+    const [searchWord, setSearchword] = useState('');
 
-
+    const filteredClients = Clients.filter(client =>
+        (client.firstName && client.firstName.toLowerCase().includes(searchWord.toLowerCase())) ||
+        (client.lastName && client.lastName.toLowerCase().includes(searchWord.toLowerCase()))
+    );
 
 
     return (
@@ -34,7 +39,17 @@ export default function Traveldetailcard() {
                 <div className="accordion">
                     {/* Accordion for client details */}
                     <h2 className="mb-4 mt-3">Client Details</h2>
-                    {Clients.map(client => (
+
+                    <input
+                        type="text"
+                        className="form-control mb-3"
+                        placeholder="Search clients..."
+                        value={searchWord}
+                        onChange={(e) => setSearchword(e.target.value)}
+                    />
+
+
+                    {filteredClients.map(client => (
                         <Clientaccordion key={client.id} client={client} />))}
 
 
