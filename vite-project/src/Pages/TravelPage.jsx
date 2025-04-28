@@ -9,7 +9,10 @@ export default function Traveldetailcard() {
     const destination = Destinations.find(dest => dest.id === parseInt(id));
     const [searchWord, setSearchword] = useState('');
 
-    const filteredClients = Clients.filter(client =>
+    const travellers = Clients.filter(client => destination.participants_id.includes(client.id))
+
+
+    const filteredClients = travellers.filter(client =>
         (client.firstName && client.firstName.toLowerCase().includes(searchWord.toLowerCase())) ||
         (client.lastName && client.lastName.toLowerCase().includes(searchWord.toLowerCase()))
     );
