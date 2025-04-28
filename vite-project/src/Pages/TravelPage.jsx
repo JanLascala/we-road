@@ -20,7 +20,7 @@ export default function Traveldetailcard() {
 
     return (
         <div className="container p-4">
-            <div className="p-3 my-5 bg-light rounded-3 shadow">
+            <div className="p-3 my-5 bg-light rounded-3 shadow-lg">
                 <div className="row">
                     <div className="col-sm-12 col-lg-6">
                         <h1 className="fw-bold">{destination.destination}</h1>

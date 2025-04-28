@@ -8,12 +8,10 @@ export default function Header() {
             <nav className="navbar navbar-expand navbar-light bg-light shadow-sm">
                 <div className="nav navbar-nav">
                     <div className="logo">
-                        <a className="nav-item nav-link active" href="#" aria-current="page">
-                            <img src="BooRoad.png" alt="" />
-                        </a>
+                        <Link className="nav-item nav-link active mx-5" to="/">
+                            <img src="/images/BooRoad.png" alt="" style={{ width: "80px" }} />
+                        </Link>
                     </div>
-
-                    <Link className="nav-item nav-link" to="/">Home</Link>
                 </div>
             </nav>
         </>

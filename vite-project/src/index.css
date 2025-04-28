@@ -8,12 +8,33 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --br-dark: #151515;
+    --br-light: #f8f9fadc;
+    --br-ligther: #ffffff;
+    --br-primary: #f64758;
+
+    /* #d53636; */
+}
+
+body {
+
+    background-color: var(--br-ligther);
+    color: var(--br-dark);
+}
+
 main {
     min-height: 600px;
 
     .copyright {
         font-size: 0.5rem;
     }
+}
+
+.logo {
+    width: 20px;
+
 }
 
 .city-img {
@@ -28,6 +49,16 @@ main {
 }
 
 /*footer*/
+footer {
+    background-color: var(--br-dark);
+    text-align: center;
+
+    p {
+        color: var(--br-light);
+        font-size: 0.8rem;
+    }
+}
+
 a {
     text-decoration: none !important;
     color: black;
@@ -35,4 +66,34 @@ a {
 
 li {
     list-style: none;
+}
+
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    border-radius: 999px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background-color: #218838;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(33, 136, 56, 0.15);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.call-btn i {
+    font-size: 1.1em;
+    vertical-align: middle;
 }
