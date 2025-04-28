@@ -16,6 +16,7 @@ export default function TravelCards({ destination }) {
                             <span className="d-block fw-bold">Departure: {destination.departureDate}</span>
                             <span className="d-block fw-bold">Return: {destination.returnDate}</span>
                             <span className="d-block fw-bold">Participants: {destination.participants}</span>
+
                         </div>
                         <p className="mt-4">{destination.description}</p>
                     </div>

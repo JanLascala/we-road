@@ -9,7 +9,7 @@ export default function Clientaccordion({ client }) {
             <div id={`collapse${client.id}`} className="accordion-collapse collapse" aria-labelledby={`heading${client.id}`} data-bs-parent="#accordionExample">
                 <div className="accordion-body">
                     <p><strong>Codice Fiscale:</strong> {client.codiceFiscale}</p>
-                    <p><strong>Phone:</strong> {client.phone}</p>
+                    <p><strong>Phone:</strong> {client.phone}<i class="bi bi-telephone"></i>Call</p>
                     <p><strong>Email:</strong> {client.email}</p>
                 </div>
             </div>

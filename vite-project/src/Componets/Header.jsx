@@ -9,7 +9,7 @@ export default function Header() {
                 <div className="nav navbar-nav">
                     <div className="logo">
                         <a className="nav-item nav-link active" href="#" aria-current="page">
-                            <img src="vite.svg" alt="" />
+                            <img src="BooRoad.png" alt="" />
                         </a>
                     </div>
 
