@@ -28,7 +28,8 @@ export default function Traveldetailcard() {
                         <p>
                             <strong>Departure:</strong> {destination.departureDate}<br />
                             <strong>Return:</strong> {destination.returnDate}<br />
-                            <strong>Participants:</strong> {destination.participants}
+                            <strong>Participants:</strong> {destination.participants}<br />
+                            <strong>Tour Leader:</strong> {destination.tourLeader}
                         </p>
                     </div>
                     <div className="col-sm-12 col-lg-6">

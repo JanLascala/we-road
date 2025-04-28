@@ -20,7 +20,7 @@
 
 body {
 
-    background-color: var(--br-ligther);
+    background-color: var(--br-primary) !important;
     color: var(--br-dark);
 }
 

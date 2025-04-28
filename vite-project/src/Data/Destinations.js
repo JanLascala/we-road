@@ -7,7 +7,8 @@ const Destinations = [
         description: "Explore ancient ruins and vibrant Italian culture.",
         participants: 4,
         img: "/images/Roma.jpg",
-        participants_id: [1, 2, 3, 4]
+        participants_id: [1, 2, 3, 4],
+        tourLeader: "Luca Rossi"
     },
     {
         id: 2,
@@ -17,7 +18,9 @@ const Destinations = [
         description: "A romantic getaway in the city of lights.",
         participants: 2,
         img: "/images/Paris.jpg",
-        participants_id: [5, 6]
+        participants_id: [5, 6],
+        tourLeader: "Giulia Bianchi"
+
     },
     {
         id: 3,
@@ -27,7 +30,8 @@ const Destinations = [
         description: "Sun, sea, and stunning architecture await.",
         participants: 6,
         img: "/images/Barcellona.jpeg",
-        participants_id: [2, 4, 5, 6, 7, 9]
+        participants_id: [2, 4, 5, 6, 7, 9],
+        tourLeader: "Marco Ferrari"
     },
     {
         id: 4,
@@ -37,7 +41,8 @@ const Destinations = [
         description: "The city that never sleeps welcomes you.",
         participants: 3,
         img: "/images/NewYork.jpg",
-        participants_id: [4, 8, 9]
+        participants_id: [4, 8, 9],
+        tourLeader: "Sara Romano"
     },
     {
         id: 5,
@@ -47,7 +52,8 @@ const Destinations = [
         description: "A fusion of tradition and cutting-edge modernity.",
         participants: 5,
         img: "/images/Tokyo.jpg",
-        participants_id: [1, 3, 5, 6, 7]
+        participants_id: [1, 3, 5, 6, 7],
+        tourLeader: "Alessandro Conti"
     },
     {
         id: 6,
@@ -57,7 +63,8 @@ const Destinations = [
         description: "Mountains, wildlife, and oceans to discover.",
         participants: 4,
         img: "/images/CapeTown.jpg",
-        participants_id: [1, 2, 3, 4]
+        participants_id: [1, 2, 3, 4],
+        tourLeader: "Elena Greco"
     },
     {
         id: 7,
@@ -67,7 +74,8 @@ const Destinations = [
         description: "Northern lights and volcanic landscapes.",
         participants: 2,
         img: "/images/Iceland.jpg",
-        participants_id: [6, 8]
+        participants_id: [6, 8],
+        tourLeader: "Davide Marino"
     },
     {
         id: 8,
@@ -77,7 +85,8 @@ const Destinations = [
         description: "Ring in the new year down under.",
         participants: 7,
         img: "/images/Sydney.jpg",
-        participants_id: [1, 2, 3, 4, 5, 6, 7]
+        participants_id: [1, 2, 3, 4, 5, 6, 7],
+        tourLeader: "Chiara Esposito"
     },
     {
         id: 9,
@@ -87,7 +96,8 @@ const Destinations = [
         description: "Explore the city of angels and its vibrant culture.",
         participants: 4,
         img: "/images/LosAngeles.jpg",
-        participants_id: [5, 7, 8, 9]
+        participants_id: [5, 7, 8, 9],
+        tourLeader: "Luca Rossi"
     }
 ];
 

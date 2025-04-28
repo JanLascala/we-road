@@ -3,7 +3,7 @@ export default function TravelCards({ destination }) {
 
     return (
         <>
-            <div className="col mb-3">
+            <div className="col-sm-12 col-md-6 col-lg-4">
                 <Link className="card shadow h-100" to={`/Traveldetailcard/${destination.id}`}>
                     <div>
                         <img src={destination.img} alt={destination.destination} className="card-img-top city-img" />
@@ -16,6 +16,7 @@ export default function TravelCards({ destination }) {
                             <span className="d-block fw-bold">Departure: {destination.departureDate}</span>
                             <span className="d-block fw-bold">Return: {destination.returnDate}</span>
                             <span className="d-block fw-bold">Participants: {destination.participants}</span>
+                            <span className="d-block fw-bold">Tour Leader: {destination.tourLeader}</span>
 
                         </div>
                         <p className="mt-4">{destination.description}</p>
